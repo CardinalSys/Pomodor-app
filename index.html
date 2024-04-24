@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styless.css">
+    <script src="index.js"></script>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Pomodoro Timer</title>
+  </head>
+  <body>
+      <header class="header">
+        <button id="option-button" class="option-button">Configure</button>
+      </header>
+
+    <div class="option-menu" id="option-menu">
+      <h2 class="config-text">Configure</h2>
+      <div class="config">
+        <label for="desired-time">Desired pomodoro time:</label>
+        <input type="number" id="desired-time" class="desired-time" value="25">
+        <label for="desired-short-time">Desired short break time:</label>
+        <input type="number" id="desired-short-time" class="desired-short-time" value="5">
+        <label for="desired-long-time">Desired long break time:</label>
+        <input type="number" id="desired-long-time" class="desired-long-time" value="15">
+        <div class="input-container">
+          <input type="checkbox" id="block-social-media-btn" class="block-social-media">
+          <label for="block-social-media"> Block social media</label><br>
+        </div>
+        <button id="apply-btn" class="apply-btn">Apply</button>
+      </div>
+
+    </div>
+    <div class="container">
+      <div class="center">
+        <h1 id="text-timer">Pomodoro Timer</h1>
+        <div class="center-header">
+          <button id="pomodoro-btn">Pomodoro</button>
+          <button id="short-break-btn">Short Break</button>
+          <button id="long-break-btn">Long Break</button>
+        </div>
+        <div class="timer" id="timer">25:00</div>
+        <button id="toggle-button" class="toggle-button">Start</button>
+      </div>
+    </div>
+  </body>
+</html>

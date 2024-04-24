@@ -1,0 +1,35 @@
+{
+  "name": "pomodoro",
+  "version": "1.0.0",
+  "description": "a pomodoro timer with blocking websites function",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-builder"
+  },
+  "author": "CardinalSys",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^30.0.1",
+    "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "electron-reload": "^2.0.0-alpha.1"
+  },
+
+  "build": {
+    "appId": "pomodoro",
+    "productName": "pomodoro",
+    "win": {
+        "target": "nsis"
+    },
+    "nsis": {
+        "oneClick": false,
+        "allowElevation": true,
+        "allowToChangeInstallationDirectory": true,
+        "createDesktopShortcut": true,
+        "createStartMenuShortcut": true
+    }
+}
+}

@@ -1,0 +1,104 @@
+body {
+    margin: 0;  
+    background-color:rgb(180, 68, 68);
+    color: white;
+    overflow: hidden;
+}
+
+header {
+    display: flex; 
+    flex-direction: column; 
+    align-items:center; 
+    border-bottom: 1px solid black;;
+}
+
+.center-header{
+    display: flex; 
+    align-items:center; 
+    gap: 10px;
+    margin-bottom: 80px;
+}
+
+.center-header button{
+    border-radius: 3px;
+    height: 30px;
+    color: rgb(180, 68, 68);
+}
+
+.option-button{
+    margin: 10px;
+    margin-left: 300px;
+    font-size: 15px;
+    height: 40px;
+    background-color:rgb(194, 86, 86);
+}
+
+.container{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;  
+}
+
+.center{
+    background-color:rgb(194, 86, 86);
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    height: 300px;  
+    padding: 10%;
+}
+
+.timer{
+    font-size: 70px;
+}
+
+.toggle-button{
+    height: 50px;
+    width: 200px;
+    margin-top: 30px;
+    font-size: 30px;
+    color: rgb(180, 68, 68);;
+    border-radius: 10px;
+}
+
+.option-menu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.config{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.config input{
+    width: 50px;  
+    height: 20px;
+
+}
+
+
+
+.apply-btn{
+    margin-top: 10px;
+    height: 30px;
+    width: 70px;
+}
